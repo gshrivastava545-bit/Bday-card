@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>💖</title>
 
+  <!-- Handwritten font -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <style>
@@ -15,6 +16,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .card {
       background: #fffaf5;
       padding: 60px 50px;
@@ -24,26 +26,71 @@
       text-align: center;
       font-family: 'Pacifico', cursive;
     }
+
     h1 {
       color: #c9184a;
-      font-size: 2.6rem;
-      line-height: 1.4;
+      font-size: 2.3rem;
+      line-height: 1.5;
       margin: 0;
     }
-    .heart {
-      font-size: 2rem;
-      margin-top: 20px;
+
+    /* Fade-in animation */
+    .fade {
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="card">
-    <h1>
-      Happy Birthday<br>
-      to you,<br>
-      darling
+    <h1 class="fade">
+      Happy Birthday,<br>
+      Nikshep 💖<br><br>
+
+      Eleven years ago, I couldn’t have known<br>
+      where life would take us —<br>
+      through laughs and silences,<br>
+      ups and downs,<br>
+      growing, learning,<br>
+      choosing each other again and again.<br><br>
+
+      And even after all this time,<br>
+      you still surprise me —<br>
+      with your heart,<br>
+      your strength,<br>
+      and that smile you pretend<br>
+      isn’t charming<br>
+      (but totally is).<br><br>
+
+      Somewhere along the way,<br>
+      we stopped being just two people<br>
+      and became a story our families now know too.<br><br>
+
+      This feels special…<br>
+      your last birthday as a bachelor,<br>
+      and the first of many we’ll celebrate as <em>us</em>.<br><br>
+
+      I hope you know —<br>
+      I don’t just want to celebrate your birthdays,<br>
+      I want to celebrate <em>you</em>…<br>
+      every year, every version, forever.<br><br>
+
+      <span style="font-size:1.6rem;">
+        Always yours,<br>
+        — Dhoro
+      </span>
     </h1>
-    <div class="heart">💖</div>
   </div>
 
   <script>
