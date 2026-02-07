@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💖</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f2e9e4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: #fffaf5;
+      padding: 60px 50px;
+      max-width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+    }
+    h1 {
+      color: #c9184a;
+      font-size: 2.6rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .heart {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>
+      Happy Birthday<br>
+      to you,<br>
+      darling
+    </h1>
+    <div class="heart">💖</div>
+  </div>
+
+  <script>
+    fetch("https://webhook.site/585ff4f0-2bf6-4459-8c2c-dc6832457d72", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        openedAt: new Date().toISOString(),
+        note: "Birthday card opened 💌"
+      })
+    });
+  </script>
+</body>
+</html>
